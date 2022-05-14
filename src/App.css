@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background: lightseagreen;
+    border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,
+h2 {
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+h4 {
+    color: #DDD;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+    color: #000;
+    font-weight: bold;
+}
+
+.menu,
+.quiz,
+.endscreen {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.menu {
+    background-color: rgb(48, 138, 48);
+}
+
+.endscreen {
+    background-color: rgb(48, 138, 48);
+}
+
+.btn-start,
+.btn-finish,
+.btn-back,
+.btn-next,
+.options button {
+    padding: .7rem 1.5rem;
+    display: flex;
+    margin: 1rem 0;
+    min-width: 200px;
+    height: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn-start,
+.btn-back {
+    background: #000;
+    color: #fff;
+}
+
+.btn-next {
+    background: rgb(49, 102, 42);
+    color: #fff;
+}
+
+.btn-finish {
+    background: rgb(27, 63, 146);
+    color: #fff;
+}
+
+.btn-question:focus {
+    background: #000;
+    color: #fff;
+}
+
+.btn-start,
+.btn-back,
+.btn-next,
+.btn-finish {
+    gap: .7rem;
 }
